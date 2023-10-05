@@ -62,45 +62,88 @@ class Main extends StatelessWidget {
                         width: 120,
                         height: 50,
                         decoration: BoxDecoration(
-                          border: Border.all(width: 1),
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(30),
                         ),
-                        child: const Image(
-                            image: AssetImage(
-                          'image/2554936.png',
-                        )),
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: const Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image(
+                                  image: AssetImage(
+                                'image/2554936.png',
+                              )),
+                              Divider(
+                                indent: 10,
+                              ),
+                              Text(
+                                'Car',
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.w600),
+                              )
+                            ],
+                          ),
+                        ),
                       ),
                       const Divider(indent: 10),
                       Container(
                         width: 120,
                         height: 50,
                         decoration: BoxDecoration(
-                          border: Border.all(width: 1),
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(30),
                         ),
-                        child: const Image(
-                            image: AssetImage(
-                          'image/motorcycle-sports-bike-icon-115629692461s5jwedks2.png',
-                        )),
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: const Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image(
+                                  image: AssetImage(
+                                'image/bikes.png',
+                              )),
+                              Divider(
+                                indent: 10,
+                              ),
+                              Text(
+                                'Bike',
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.w600),
+                              )
+                            ],
+                          ),
+                        ),
                       ),
-                      const Divider(
-                        indent: 10,
-                      ),
+                      const Divider(indent: 10),
                       Container(
                         width: 120,
                         height: 50,
                         decoration: BoxDecoration(
-                          border: Border.all(width: 1),
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(30),
                         ),
-                        child: const Image(
-                          image: AssetImage(
-                              'image/lovepik-bicycle-icon-free-vector-illustration-material-png-image_401274267_wh1200.png'),
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: const Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image(
+                                  image: AssetImage(
+                                'image/cycle.png',
+                              )),
+                              Divider(
+                                indent: 10,
+                              ),
+                              Text(
+                                'Car',
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.w600),
+                              )
+                            ],
+                          ),
                         ),
-                      )
+                      ),
                     ],
                   ),
                   const Row(
@@ -126,138 +169,161 @@ class Main extends StatelessWidget {
                       )
                     ],
                   ),
-                  const Scrollbar(
+                  Divider(
+                    height: 20,
+                    color: Colors.grey.shade100,
+                  ),
+                  Scrollbar(
                     child: Column(
                       children: [
                         Row(
                           children: [
                             Card(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20)),
                               color: Colors.white,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Padding(
-                                      padding:
-                                          EdgeInsets.fromLTRB(20, 20, 20, 20)),
-                                  Image(
-                                    width: 180,
-                                    image: AssetImage(
-                                        'image/maxresdefault-removebg-preview.png'),
-                                  ),
-                                  Divider(
-                                    height: 10,
-                                  ),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        '2023 BMW x7',
-                                        style: TextStyle(
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.bold,
+                              child: const Padding(
+                                padding: EdgeInsets.all(18.0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Image(
+                                      width: 150,
+                                      image: AssetImage(
+                                          'image/maxresdefault-removebg-preview.png'),
+                                    ),
+                                    Divider(
+                                      height: 15,
+                                    ),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              '2023 BMW x7',
+                                              style: TextStyle(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ],
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                  Divider(
-                                    height: 10,
-                                  ),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    children: [
-                                      Icon(Icons.location_on),
-                                      Text('United States'),
-                                    ],
-                                  ),
-                                  Divider(
-                                    height: 10,
-                                  ),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    children: [
-                                      Icon(
-                                        Icons.chair,
-                                        color: Colors.blue,
-                                      ),
-                                      Text('seat'),
-                                      Divider(
-                                        indent: 10,
-                                      ),
-                                      Icon(
-                                        Icons.monetization_on,
-                                        color: Colors.blue,
-                                      ),
-                                      Text('\$400/day'),
-                                    ],
-                                  ),
-                                ],
+                                        Divider(
+                                          height: 10,
+                                        ),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Icon(Icons.location_on),
+                                            Text('United States'),
+                                          ],
+                                        ),
+                                        Divider(
+                                          height: 10,
+                                        ),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Icon(
+                                              Icons.chair,
+                                              color: Colors.blue,
+                                            ),
+                                            Text('seat'),
+                                            Divider(
+                                              indent: 10,
+                                            ),
+                                            Icon(
+                                              Icons.monetization_on,
+                                              color: Colors.blue,
+                                            ),
+                                            Text('\$400/day'),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
-                            Divider(
-                              indent: 10,
-                            ),
                             Card(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20)),
                               color: Colors.white,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Padding(
-                                      padding:
-                                          EdgeInsets.fromLTRB(20, 20, 20, 20)),
-                                  Image(
-                                    width: 180,
-                                    image: AssetImage(
-                                        'image/maxresdefault-removebg-preview.png'),
-                                  ),
-                                  Divider(
-                                    height: 10,
-                                  ),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        '2023 BMW x7',
-                                        style: TextStyle(
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.bold,
+                              child: const Padding(
+                                padding: EdgeInsets.all(18.0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Image(
+                                      width: 150,
+                                      image: AssetImage(
+                                          'image/maxresdefault-removebg-preview.png'),
+                                    ),
+                                    Divider(
+                                      height: 15,
+                                    ),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              '2023 BMW x7',
+                                              style: TextStyle(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ],
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                  Divider(
-                                    height: 10,
-                                  ),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    children: [
-                                      Icon(Icons.location_on),
-                                      Text('United States'),
-                                    ],
-                                  ),
-                                  Divider(
-                                    height: 10,
-                                  ),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    children: [
-                                      Icon(
-                                        Icons.chair,
-                                        color: Colors.blue,
-                                      ),
-                                      Text('seat'),
-                                      Divider(
-                                        indent: 10,
-                                      ),
-                                      Icon(
-                                        Icons.monetization_on,
-                                        color: Colors.blue,
-                                      ),
-                                      Text('\$400/day'),
-                                    ],
-                                  ),
-                                ],
+                                        Divider(
+                                          height: 10,
+                                        ),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Icon(Icons.location_on),
+                                            Text('United States'),
+                                          ],
+                                        ),
+                                        Divider(
+                                          height: 10,
+                                        ),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Icon(
+                                              Icons.chair,
+                                              color: Colors.blue,
+                                            ),
+                                            Text('seat'),
+                                            Divider(
+                                              indent: 10,
+                                            ),
+                                            Icon(
+                                              Icons.monetization_on,
+                                              color: Colors.blue,
+                                            ),
+                                            Text('\$400/day'),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ],

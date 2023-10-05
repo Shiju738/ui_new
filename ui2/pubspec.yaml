@@ -62,8 +62,8 @@ flutter:
   assets:
       - image/maxresdefault-removebg-preview.png
       - image/2554936.png
-      - image/motorcycle-sports-bike-icon-115629692461s5jwedks2.png
-      - image/lovepik-bicycle-icon-free-vector-illustration-material-png-image_401274267_wh1200.png
+      - image/cycle.png
+      - image/bikes.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
