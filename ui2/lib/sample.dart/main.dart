@@ -46,13 +46,22 @@ class Main extends StatelessWidget {
                     height: 30,
                     color: Colors.grey.shade100,
                   ),
-                  const Row(
+                  Row(
                     children: [
-                      SizedBox(
-                          width: 390,
-                          child: SearchBar(
-                              leading: Icon(Icons.search),
-                              hintText: 'Search anything...')),
+                      Row(
+                        children: [
+                          SizedBox(
+                            width: 390,
+                            child: SearchBar(
+                              leading: const Icon(
+                                Icons.search,
+                              ),
+                              onTap: () {},
+                              hintText: 'Search anything...',
+                            ),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                   Row(
@@ -189,7 +198,7 @@ class Main extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     Image(
-                                      width: 150,
+                                      width: 140,
                                       image: AssetImage(
                                           'image/maxresdefault-removebg-preview.png'),
                                     ),
@@ -263,9 +272,8 @@ class Main extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     Image(
-                                      width: 150,
-                                      image: AssetImage(
-                                          'image/maxresdefault-removebg-preview.png'),
+                                      width: 110,
+                                      image: AssetImage('image/car1.png'),
                                     ),
                                     Divider(
                                       height: 15,
@@ -279,7 +287,7 @@ class Main extends StatelessWidget {
                                               MainAxisAlignment.start,
                                           children: [
                                             Text(
-                                              '2023 BMW x7',
+                                              'MASERTI MC20',
                                               style: TextStyle(
                                                 fontSize: 15,
                                                 fontWeight: FontWeight.bold,
@@ -317,7 +325,157 @@ class Main extends StatelessWidget {
                                               Icons.monetization_on,
                                               color: Colors.blue,
                                             ),
-                                            Text('\$400/day'),
+                                            Text('\$600/day'),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Card(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20)),
+                              color: Colors.white,
+                              child: const Padding(
+                                padding: EdgeInsets.all(18.0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Image(
+                                      width: 110,
+                                      image: AssetImage('image/car2.png'),
+                                    ),
+                                    Divider(
+                                      height: 15,
+                                    ),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              'FERRARI F8',
+                                              style: TextStyle(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        Divider(
+                                          height: 10,
+                                        ),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Icon(Icons.location_on),
+                                            Text('United States'),
+                                          ],
+                                        ),
+                                        Divider(
+                                          height: 10,
+                                        ),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Icon(
+                                              Icons.chair,
+                                              color: Colors.blue,
+                                            ),
+                                            Text('seat'),
+                                            Divider(
+                                              indent: 10,
+                                            ),
+                                            Icon(
+                                              Icons.monetization_on,
+                                              color: Colors.blue,
+                                            ),
+                                            Text('\$550/day'),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Card(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20)),
+                              color: Colors.white,
+                              child: const Padding(
+                                padding: EdgeInsets.all(18.0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Image(
+                                      width: 150,
+                                      image: AssetImage('image/car3.png'),
+                                    ),
+                                    Divider(
+                                      height: 15,
+                                    ),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              'AUDI R8',
+                                              style: TextStyle(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        Divider(
+                                          height: 10,
+                                        ),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Icon(Icons.location_on),
+                                            Text('United States'),
+                                          ],
+                                        ),
+                                        Divider(
+                                          height: 10,
+                                        ),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Icon(
+                                              Icons.chair,
+                                              color: Colors.blue,
+                                            ),
+                                            Text('seat'),
+                                            Divider(
+                                              indent: 10,
+                                            ),
+                                            Icon(
+                                              Icons.monetization_on,
+                                              color: Colors.blue,
+                                            ),
+                                            Text('\$450/day'),
                                           ],
                                         ),
                                       ],

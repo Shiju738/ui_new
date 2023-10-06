@@ -64,6 +64,11 @@ flutter:
       - image/2554936.png
       - image/cycle.png
       - image/bikes.png
+      - image/car1.png
+      - image/car2.png
+      - image/car3.png
+      - image/car4.png
+      - image/car5.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
