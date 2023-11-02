@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+
 import 'package:ui2/sample.dart/main.dart';
-import 'package:ui2/sample.dart/search.dart';
 
 void main() {
   runApp(const MyApp());

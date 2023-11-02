@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui2/sample.dart/search.dart';
 
 class Main extends StatelessWidget {
   const Main({super.key});
@@ -48,19 +49,40 @@ class Main extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      Row(
-                        children: [
-                          SizedBox(
-                            width: 390,
-                            child: SearchBar(
-                              leading: const Icon(
-                                Icons.search,
-                              ),
-                              onTap: () {},
-                              hintText: 'Search anything...',
-                            ),
+                      Expanded(
+                        child: Container(
+                          width: 390,
+                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.grey),
+                            borderRadius: BorderRadius.circular(20.0),
                           ),
-                        ],
+                          child: Row(
+                            children: [
+                              const Icon(Icons.search),
+                              Expanded(
+                                child: TextField(
+                                  onTap: () {},
+                                  decoration: const InputDecoration(
+                                    hintText: 'Search anything...',
+                                    border: InputBorder.none,
+                                  ),
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: () {
+                                  // const Search();
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              const Search()));
+                                },
+                                icon: const Icon(Icons.tune),
+                              )
+                            ],
+                          ),
+                        ),
                       ),
                     ],
                   ),
